@@ -2,20 +2,17 @@
   <div>
       <section class="ms_header_logo">
         <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png" alt="">
-        <GenreSelect/>
       </section>
 
   </div>
 </template>
 
 <script>
-import GenreSelect from "./parts/GenreSelect.vue"
+
 export default {
  name: 'Header',
- components:{
-GenreSelect
- } 
-}
+
+}//chiusura export
 </script>
 
 <style lang="scss">
