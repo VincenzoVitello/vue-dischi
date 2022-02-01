@@ -1,8 +1,10 @@
 <template>
   <div class="ms_container">
-    <div v-for="(card, index) in songsArray" :key="index" class="card">
+    <div  v-if="loading" class="loader">Loading...</div>
+    <div v-for="(card, index) in songsArray" :key="index" class="card" v-else>
       <Cards :album="card"/>
     </div>
+    
   </div>
 </template>
 
@@ -25,6 +27,7 @@ methods: {
             this.songsArray = risposta.data.response;
             console.log(risposta.data.response)
             console.log(this.songsArray)
+            this.loading = false;
          })
         .catch(function (error) {
                     // handle error
@@ -36,6 +39,7 @@ data() {
     return {
         APIurl: 'https://flynn.boolean.careers/exercises/api/array/music',
         songsArray: [],
+        loading: true,
 
     }
 },
