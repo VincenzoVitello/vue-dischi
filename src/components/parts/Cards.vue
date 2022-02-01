@@ -1,7 +1,7 @@
 <template>
   <div>
       <img :src="album.poster" alt="">
-      <h4>{{album.author}}}</h4>
+      <h4>{{album.author}}</h4>
       <p>{{album.title}}</p>
       <p>{{album.year}}</p>
   </div>
