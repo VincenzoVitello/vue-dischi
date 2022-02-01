@@ -1,0 +1,14 @@
+@import './vars.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+body{
+    background-color: $secondaryColor;
+    font-family: 'Raleway', sans-serif;
+}
+.ms_container{
+    margin: auto;
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
